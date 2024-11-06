@@ -1,0 +1,16 @@
+{echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+  echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
+  echo "{markdown content}" >> $GITHUB_STEP_SUMMARY
+        - name: Set color
+        id: color-selector
+        run: echo "SELECTED_COLOR=green" >> "$GITHUB_OUTPUT"
+      - name: Get color
+        env:
+          SELECTED_COLOR: ${{ steps.color-selector.outputs.SELECTED_COLOR }}
+        run: echo "The selected color is $SELECTED_COLOR"
+  echo "{name}={value}" >> "$GITHUB_OUTPUT"
+
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+  }
+}
