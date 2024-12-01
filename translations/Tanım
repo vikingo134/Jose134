@@ -1,0 +1,31 @@
+Tanım
+Belirtilen sondaki zorluk ayarlamalarının kaydını döndürür :interval:
+
+Blok zaman damgası
+Blok yüksekliği
+Zorluk
+Zorluk değişimi
+Herhangi bir zaman aralığı belirtilmezse, mevcut tüm veriler döndürülür
+
+curl -sSL "https://mempool.space/api/v1/mining/difficulty-adjustments/1m"
+
+[
+  [
+    1703311464,
+    822528,
+    72006146478567.1,
+    1.06983
+  ],
+  [
+    1702180644,
+    820512,
+    67305906902031.39,
+    0.990408
+  ],
+  [
+    1700957763,
+    818496,
+    67957790298897.88,
+    1.0507
+  ]
+]
